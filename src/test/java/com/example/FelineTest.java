@@ -36,6 +36,12 @@ public class FelineTest {
 
         assertEquals(KITTENS_COUNT, actualResult);
     }
+    @Test
+    public void testGetKittensWithKittensCount() {
+        Feline feline = new Feline();
+        int kittens = feline.getKittens(10);
+        Assert.assertEquals(10, kittens);
+    }
 
 }
 
